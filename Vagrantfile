@@ -17,4 +17,6 @@ Vagrant.configure("2") do |config|
     vm1.vm.provision "shell", path: "setup.sh"
     vm1.vm.provision "shell", path: "wireshark_install.sh"
   end
+    
+  config.vm.boot_timeout = 60
 end
